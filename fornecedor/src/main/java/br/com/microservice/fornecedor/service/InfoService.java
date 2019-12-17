@@ -8,14 +8,11 @@ import br.com.microservice.fornecedor.respository.InfoRepository;
 
 @Service
 public class InfoService {
-	
+
 	@Autowired
 	private InfoRepository infoRepository;
-
+	
 	public InfoFornecedor getInfoPorEstado(String estado) {
-		
 		return infoRepository.findByEstado(estado);
 	}
-
-	
 }
