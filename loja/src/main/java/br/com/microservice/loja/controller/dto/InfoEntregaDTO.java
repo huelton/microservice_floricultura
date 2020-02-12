@@ -1,32 +1,27 @@
-package br.com.microservice.loja.model;
+package br.com.microservice.loja.controller.dto;
 
 import java.time.LocalDate;
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Data
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-public class Compra {
+@ToString
+public class InfoEntregaDTO {
 
-	@Id
 	private Long pedidoId;
-	
-	private Integer tempoDePreparo;
-	
-	private String enderecoDestino;
-	
+
 	private LocalDate dataParaEntrega;
-	
-	private Long voucher;
+
+	private String enderecoOrigem;
+
+	private String enderecoDestino;
 }
