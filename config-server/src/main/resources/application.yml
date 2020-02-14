@@ -9,5 +9,5 @@ spring:
           enabled: true
         git:
           uri: https://github.com/huelton/microservice-repo/
-          search-paths: fornecedor,loja, transportador
+          search-paths: fornecedor,loja,transportador
   
